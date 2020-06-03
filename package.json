@@ -1,0 +1,43 @@
+{
+  "name": "lesson4-task5",
+  "version": "1.0.0",
+  "description": "Fifth task for fourth JS module",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/pawel.ochota/lesson4-task5.git"
+  },
+  "author": "Paweł Ochota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/pawel.ochota/lesson4-task5/issues"
+  },
+  "homepage": "https://gitlab.com/pawel.ochota/lesson4-task5#readme",
+  "private": true,
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.3.0",
+    "jest": "25.1.0",
+    "jest-junit": "^10.0.0"
+  },
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": ".futurecollars",
+    "outputName": "test-results.xml"
+  }
+}
