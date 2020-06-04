@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>COCO</title>
+  </head>
+  <body>
+    <button id="startTimeout">Click me</button>
+
+    <script>
+      let button;
+
+      function startTimer() {
+        let h1 = document.createElement('h1');
+
+        setTimeout(() => {
+          h1.innerText = "Boom!"
+          document.getElementsByTagName('body')[0].appendChild(h1);
+        }, 5000)
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        button = document.getElementById('startTimeout');
+        button.addEventListener('click', startTimer);
+      });
+    </script>
+  </body>
+</html>
