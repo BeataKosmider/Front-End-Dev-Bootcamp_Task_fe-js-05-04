@@ -8,23 +8,5 @@
   </head>
   <body>
     <button id="startTimeout">Click me</button>
-
-    <script>
-      let button;
-
-      function startTimer() {
-        let h1 = document.createElement('h1');
-
-        setTimeout(() => {
-          h1.innerText = "Boom!"
-          document.getElementsByTagName('body')[0].appendChild(h1);
-        }, 5000)
-      }
-
-      document.addEventListener('DOMContentLoaded', () => {
-        button = document.getElementById('startTimeout');
-        button.addEventListener('click', startTimer);
-      });
-    </script>
   </body>
 </html>
